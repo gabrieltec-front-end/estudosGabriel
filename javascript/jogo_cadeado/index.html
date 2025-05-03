@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buscarNivel(){
+           var nivel= document.getElementById("nivel").value
+           if(nivel==""){
+            return alert("escolha o nivel")
+           }
+           window.location.href="cadeado.html?"+nivel
+        }
+    </script>
+    <h1> Jogo do cadeado</h1>
+    <select id="nivel">
+        <option id="iniciar" value="">Escolha o nivel</option>
+        <option id="facil" value="facil">Facil</option>
+        <option id="normal" value="normal">Normal</option>
+        <option id="dificil" value="dificil">Dificil</option>
+    </select>
+    <button id="jogar" onclick="buscarNivel()">Iniciar Jogo</button>
+    
+</body>
+</html>

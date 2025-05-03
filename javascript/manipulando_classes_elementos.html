@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        function modificarClasses(stilo){
+            document.getElementById("elemento").className=stilo;
+
+        }
+    </script>
+
+<style>
+    .stilo1{
+        width: 100px;
+        height: 100px;
+        background: blue;
+    }
+
+    .stilo2{
+        width: 100px;
+        height: 100px;
+        background: red;
+        padding: 20px;
+
+    }
+       
+    
+</style>
+</head>
+<body>
+    <button type="button" onclick="modificarClasses('stilo2')">Modificar classes</button>
+    <br>
+    <div ></div>
+    <br>
+    <div id="elemento" class="stilo1"></div>
+    <br>
+    <div ></div>
+    <br>
+    <div class="elementos"></div>
+    <br>
+    <div ></div>
+    <br>
+    <div class="elementos"></div>
+    
+    
+</body>
+</html>

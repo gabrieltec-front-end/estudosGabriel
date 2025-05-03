@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*var lista_pessoas=["Gabriel","Marcelo","Amanda","Felipe","Pranchana Jackson"]
+        //Utilizando da tecinica de callback juntamente com o metodo forEach para percorrer os valoress e indicess do array
+        lista_pessoas.forEach(function(valor,indice,array){
+            console.log(valor,indice,)//Para a variavel array ele percorre cada vez por indice 
+            
+        })*/
+
+         var f=function(valor,indice){
+            console.log(valor,indice)
+         }
+        var lista_pessoas=["Gabriel","Marcelo","Amanda","Felipe","Pranchana Jackson"]
+
+         //Utilizei da tecnica de wapper para encapsular minha função em uma variavel,tornando mai dinamico o codigo
+        lista_pessoas.forEach(f)
+
+    </script>
+    
+</body>
+</html>

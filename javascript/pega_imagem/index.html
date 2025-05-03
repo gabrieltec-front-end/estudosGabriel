@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="cores.css" rel="stylesheet">
+    <script src="jogo2.js"></script>
+</head>
+<body>
+    <script> function recuperar(){
+        var valor=document.getElementById("valor").value
+        document.getElementById("receba").innerHTML=valor
+        console.log(valor)
+        
+
+    }
+    </script>
+    <h3 id="receba"></h3>
+    <div id="imagem_game">
+        <form>
+        <select id="valor" name="seletor">
+            <option>--Selecione o Nivel--</option>
+            <option value="1" >Facil</option>
+            <option value="2">Normal</option>
+            <option value="3">Dificil</option>
+        </select>
+        <br>
+       <button onclick="recuperar()">Iniciar</button>
+    </form>
+    </div>
+
+    
+</body>
+</html>

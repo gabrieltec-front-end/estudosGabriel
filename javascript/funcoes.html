@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var largura=prompt("Digite a largura que deseja")
+        var comprimento=prompt("Digite o comprimento do campo")
+
+        largura=parseFloat(largura)
+        comprimento=parseFloat(comprimento)
+
+        function calcularAreaTerreno(largura,comprimento){
+
+            area=largura*comprimento
+
+            return area
+        }
+
+        var area=calcularAreaTerreno(largura,comprimento)
+
+        document.write("o Valor da Área deste campo possui "+area+" metros quadrados")
+    </script>
+    
+</body>
+</html>

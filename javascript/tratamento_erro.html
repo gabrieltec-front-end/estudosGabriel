@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var netflix=[]
+        netflix[1]=[]
+        netflix[1]["nome"]="Gintama"
+        netflix[1]["categoria"]="Anime"
+
+
+        function getVideo(video){
+
+            try{
+                console.log(video[0]["nome"])
+            }catch(e){
+                console.log("Aqui sera feito o tratamento do erro")
+
+
+            }finally{
+                console.log('Finalizando tratamento')
+
+            }
+        }
+
+        getVideo(netflix)
+    </script>
+    
+</body>
+</html>

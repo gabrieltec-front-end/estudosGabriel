@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .cadeadop{
+        width: 40px;
+        height: 40px;
+       }
+    </style>
+</head>
+<body>
+    
+    <h2>Jogo do cadeado</h2>
+    <div id="cronometro"></div>
+    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="entrada" onkeyup="compararSenha()" maxlength="6">
+    <input type="text" id="entrada2" disabled>
+    <div id="pp"></div>
+
+
+
+    <script>
+        document.getElementById("entrada").focus()
+        var numRandomico=0
+        var modificar=0
+        var cadeado=0
+        cronometro=25
+        var recuperar=window.location.search
+        var separar= recuperar.replace("?","")
+        console.log(separar)
+        if(separar=="facil"){
+            cronometro=25
+        }else if(separar=="normal"){
+            cronometro=20
+        }else if(separar=="dificil"){
+            cronometro=15
+
+        }
+        document.getElementById("cronometro").innerHTML=cronometro
+        
+         function gerarNumero() {numRandomico=Math.random()
+        var escolher=String(numRandomico).split(".")
+      var retorno=escolher.length>1?escolher[1]:"";
+       modificar=retorno.slice(0,6)
+       document.getElementById("entrada2").value=modificar
+       console.log(modificar) }
+      gerarNumero()
+      
+      var cronometroJogo=setInterval(function(){
+        document.getElementById("cronometro").innerHTML=cronometro
+        if(cronometro<0){
+            window.location.href="game_over.html"
+        }
+        cronometro--
+      },1000)
+
+      function compararSenha(){
+        var valor=document.getElementById("entrada").value
+        if(valor.length==6){
+        if(valor==modificar){
+            gerarNumero()
+            document.getElementById("entrada").value=""
+            document.getElementById("pp").innerHTML="Você acertou"
+            var code=document.createElement("img")
+            code.src="ccc.png"
+            code.className="cadeadop"
+            document.body.appendChild(code)
+            cadeado++
+
+            if(cadeado==3){
+                alert("Você venceu")
+            }
+        }else{
+             document.getElementById("entrada").value=""
+            document.getElementById("pp").innerHTML="Você errou"
+
+        }}
+      }
+
+      
+    </script>
+</body>
+</html>

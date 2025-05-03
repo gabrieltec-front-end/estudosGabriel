@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var data1=new Date(2025,2,12)
+
+        var data2= new Date(2027,7,23)
+
+      /*  document.write(data1.toString())
+        document.write("<hr>")
+        data1.setDate(data1.getDate()+2)
+        document.write(data1.toString())
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+
+        document.write(data1.toString())
+        document.write("<hr>")
+        data1.setMonth(data1.getMonth()+2)
+        document.write(data1.toString())
+
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+
+        document.write(data1.toString())
+        document.write("<hr>")
+        data1.setFullYear(data1.getFullYear()+2)
+        document.write(data1.toString())*/
+
+        document.write(data1.toString())
+        document.write("<hr>")
+        document.write(data2.toString())
+
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+        document.write("<hr>")
+        //Recuperar o valor em milisegundos usando o methodo getTime com base na data de 1 de janeiro de 1970<-- valor padrão
+
+        document.write(data1.getTime())
+        document.write("<hr>")
+        document.write(data2.getTime())
+        document.write("<hr>")
+        document.write("<hr>")
+        var diferenca_milissegundos_datas=Math.abs(data1.getTime()-data2.getTime())
+
+        document.write("Valor da diferençã de milissegundos:"+diferenca_milissegundos_datas)
+        document.write("<hr>")
+        document.write("<hr>")
+
+        // Passar este valor para dias então saber a difença de quantos dias tem entra as duas datas
+        //1 um dia tem 86400000 de milissegundos
+        var milissegundos_dia=1*24*60*60*1000
+        document.write("Valor de milisegundos em 1 dia:"+milissegundos_dia)
+        document.write("<hr>")
+        document.write("<hr>")
+        var diferenca=diferenca_milissegundos_datas/milissegundos_dia
+        document.write("Valor de dias entre as duas datas:"+diferenca)
+
+
+
+
+
+
+
+
+       
+    </script>
+    
+</body>
+</html>

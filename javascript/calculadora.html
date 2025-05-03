@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #calculadora{
+            width: 350px;
+            height: 400px;
+            background-color: rgb(59, 59, 59);
+            margin: auto;
+            margin-top: 70px;
+            border-radius: 15px;
+            border: 1px solid black;
+        }
+
+        #tela{
+        
+           text-align: center;
+           
+            margin-top: 10px;
+        }
+
+        #entrada{
+            width: 300px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid black;
+            
+        }
+
+        #funcoes{
+            margin-top: 30px;
+           
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article{
+           
+            width: 55%;
+            display: flex;
+           
+
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 5px;
+          
+
+        }
+        section{
+            width: 50px;
+            height: 50px;
+            background-color: orangered;
+            border: 1px solid white;
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+           
+        }
+
+        section:hover{
+            background-color: rgb(255, 136, 0);
+            cursor: pointer;
+        }
+
+        aside{
+            display: flex;
+             
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 37%;
+            padding-right: 5px;
+        }
+
+        #igual{
+         width: 130px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="calculadora">
+
+        <div id="tela">
+            <input disabled id="entrada" placeholder="0" type="text">
+        </div>
+        <div id="funcoes">
+       <article>
+
+        <section onclick="calcular(1)" id="1">1 </section>
+        <section onclick="calcular(2)" id="2">2 </section>
+        <section onclick="calcular(3)" id="3">3 </section>
+        <section onclick="calcular(4)" id="4">4 </section>
+        <section onclick="calcular(5)" id="5">5 </section>
+        <section onclick="calcular(6)" id="6"> 6</section>
+        <section onclick="calcular(7)" id="7"> 7</section>
+        <section onclick="calcular(8)" id="8"> 8</section>
+        <section onclick="calcular(9)" id="9"> 9</section>
+       
+
+       </article>
+       <aside>
+        <section onclick="calcular('c')" id="abre_para">C</section>
+        <section onclick="calcular('(')" id="abre_para">(</section>
+        <section onclick="calcular(')')" id="abre_para">)</section>
+        <section onclick="calcular('+')" id="soma"> +</section>
+        <section onclick="calcular('-')" id="menos">-</section>
+        <section onclick="calcular('*')"id="mult">X</section>
+        <section onclick="calcular('/')" id="div"> /</section>
+        <section onclick="calcular('%')" id="resto">%</section>
+        <section onclick="calcular('')" id="igual">=</section>
+
+
+
+       </aside>
+    </div>
+
+    </div>
+
+    <script>
+        function calcular(numero){
+            if(numero!="c"){
+                document.getElementById('entrada').value+=numero
+            }
+            if(numero==""){
+               var valor_campo= document.getElementById("entrada").value
+               console.log(eval(valor_campo))
+               document.getElementById("entrada").value=eval(valor_campo)
+            }
+            if(numero=="c"){
+                document.getElementById("entrada").value=" "
+            }
+         
+            
+       
+           
+        }
+    </script>
+    
+</body>
+</html>

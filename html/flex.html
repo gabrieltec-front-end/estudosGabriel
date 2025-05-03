@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        #conteudo{
+          
+            height: 500px;
+            background-color: gray;
+            border: 1px solid black;
+            display: flex;
+           /* flex-direction:row;*/
+            /*flex-wrap: wrap;*/
+            justify-content: center;
+            /*align-items: baseline;*/
+
+
+        }
+        .informacao{
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            width: 100px;
+            height: 100px;
+            
+           
+        }
+       
+        .order1{ order: -1;}
+        .order2{ order: 2;}
+        .order3{ order: 3;}
+
+        .item1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteudo">
+        <div  class="informacao order3" >1</div>
+        <div class="informacao order2">2</div>
+        <div class="informacao order1">3</div>
+        <div  class="informacao item1">4</div>
+    </div>
+    
+</body>
+</html>

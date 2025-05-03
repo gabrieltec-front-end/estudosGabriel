@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input id="numero" placeholder="escolha tabuada" type="text">
+    <button id="aceitar" onclick="escolherTabuada()">Aceitar</button>
+    <script>
+        function escolherTabuada(){
+            var valor= document.getElementById("numero").value
+
+            for(var x=0;x<11;x++){
+                document.write(valor+"x"+x+"="+valor*x+"<br>")
+            }
+        }
+
+    </script>
+</body>
+</html>

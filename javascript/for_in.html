@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       /* var lista_nomes=[]
+        lista_nomes["alfa"]="Gabriel"
+        lista_nomes["benevenuto"]="Bohola Marcelo"
+        lista_nomes["meireles"]="Marilia"
+
+        for(var x in lista_nomes){
+            console.log("Indice "+x+" Valor "+lista_nomes[x])
+        }*/
+         
+
+        var lista_nomes=[]
+        lista_nomes["meireles"]=["Silvana","Marilia","Simone","Sonia"]
+        lista_nomes["benevenuto"]=["Marcelo","Marcelinho","David","Dayane"]
+
+        for(var x in lista_nomes){
+            document.write("<hr>")
+            document.write("<h4>Familia: "+x+"</h4>"+"<br>")
+            for(var y in lista_nomes[x])
+            document.write(lista_nomes[x][y]+"<br>")
+        }
+
+
+    </script>
+    
+</body>
+</html>

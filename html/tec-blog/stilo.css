@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(216, 211, 211);
+}
+
+#cabecalho{
+    
+    background-color: orange;
+    
+    
+}
+
+#logo{
+    text-align: center;
+    
+    font-size: 2em;
+    padding-top: 10px;
+    
+    
+}
+
+#barra{
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.branco{
+    color: white;
+}
+
+li{
+    display: inline;
+    padding: 15px;
+    
+}
+
+a{
+    
+    text-decoration: none;
+    color: white;
+    padding-left: 3px ;
+    padding-right:3px ;
+    
+    
+}
+link1{
+    padding: 5px;
+    color: white;
+}
+
+a:hover{
+        
+        background-color: white;
+        color: orange;
+        
+}
+
+img{
+    width: 100%;
+}
+#conteudo{
+    width: 800px;
+   
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+#postagens{
+    width: 450px;
+    
+    float: left;
+    margin-right: 50px;
+
+}
+
+.laranja{
+    color: orange;
+}
+
+
+.laranja:hover{
+    background-color: none;
+}
+
+.post{
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.post2{
+    padding: 10px;
+}
+
+h2{
+    color: orange;
+}
+ h3 { background-color: gray;
+   padding: 5px;
+}
+p{
+    padding: 5px;
+}
+
+#postagens2{
+    width: 300px;
+    
+    background-color: white;
+    float: left;
+
+}
+
+.block{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+
+    
+}
+
+ul{
+    text-decoration: none;
+}
+
+.clear{
+    clear: both;
+   
+    font-size: 1em;
+    text-align: center;
+
+}
+
+
+

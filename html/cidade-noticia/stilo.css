@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 500px;
+}
+
+
+#topo{
+    background: blue url("fundo.png") repeat-x left bottom;
+    height: 220px;
+}
+#logo{
+    padding-top: 10px;
+}
+#pesquisa{
+    margin-top: 20px;
+}
+
+#pesquisa li{
+    float: left;
+    list-style: none;
+}
+
+#pesquisa li a{
+    display: block;
+    padding: 14px;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+
+    
+}
+
+#conteudo-topo{
+    background: url("detalhe-topo.png") no-repeat right top;
+    background-size: 23%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+h3{
+    background-color: blue;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 3px;
+}
+
+#conteudo{
+   
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+
+
+.nomes-conteudo li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.conteudos{
+    background-color: #fff;
+}
+
+
+#nomes{
+    width: 20%;
+    
+    padding: 10px;
+    background: url("fundo-caixa.png");
+    float: left;
+    margin-right: 20px;
+}
+
+label{
+    display: block;
+}
+input[type="email"]{
+    width: 100%;
+}
+input[type="submit"]{
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+}
+.imagem{
+    width: 100%;
+}
+.noticias{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    
+    background: url("fundo-caixa.png");
+    margin-right: 20px;
+}
+h4{
+    display: inline;
+    background-color: red;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px;
+    color: #fff;
+}
+.conteudo_da_noticia{
+    background-color: #fff;
+
+}
+.noticias-conteudos{
+    margin-bottom: 10px;
+}
+
+h5{
+    color: rgb(121, 121, 250);
+}
+
+.fotos{
+    background-color: #fff;
+}
+
+.foto_conteudo{
+    width: 47%;
+    float: left;
+}
+.foto_conteudo img{
+    width: 100%;
+}
+
+.informacao_fotos{
+    width: 50%;
+    float: right;
+}
+
+.informacao_fotos p{
+    font-size: 12px;
+}

@@ -1,0 +1,75 @@
+GIT É UM SISTEMA QUE TRABALHA COM O VERSIONAMENTO DO SEU CODIG
+
+O GITHHUB É UMA PLATAFORMA QUE TRABALHA COM O GIT E DISPONIBILIZA O VERSIONAMENTO DO CODIGO DE MANEIRA ONLINE
+
+
+
+subndo os aqruivos do seu codigo para o git hub
+
+abrir git bash
+ou usar o terminal do vs code
+
+usar git clone pegar o code https disponivel n seu repositorio criado no github
+
+usar cd "nome do repositorio repositorio"
+
+copiar os arquivos para lá
+
+usar o git add . para adicionar os novos arquivos
+
+usar o git commit -m "Adiciona um comentario sobre o arquivo no qual está subindo para afins de historio de versionamento"
+
+logo depois usar o comando git push para subir seus arquivos do codigo para o github.
+fazer login no qual ele vai pedir para concluir a operação
+
+
+criando a pasta e inicializando os arquivos por meio de outra forma direto no  terminal
+
+mkdir nome-da-pasta no qual vc escolheu
+
+cd nome-da-pasta
+git init para inicializar que os arquivos da pasta iram para o repositorio como se fosse um tipo de atualização
+git add . para adicionar todos os arquivos dentro da pasta
+
+
+o git commit -m" para criar um comentario sobre no qual o arquivo vc instanciou para o versionamento"
+
+
+
+caso vc ative a branch tipo git branch master isso é uma copita temporaria no qual você pode trabalhar sem alterar o codigo-fonte
+
+git remote add origin o link disponivel no code no qual foi criado ao vc criar o novo repositorio
+
+git push origin master
+mas acredito que apenas o git push seria o suficiente sem ter que especificar o branch no qual é o repositorio
+
+<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+o git pull apos feitas alteraçoes e feito o seu comite,antes de subir ele para o repositorio é bastante comum usar o comando 
+git pull...>este comando atualiza o repositorio local com as atualizações mais recentes feito no repositorio remoto,sendo assim atualiza o seu repositorio local
+,logo em seguida um git push padrão para subir as alterações feitas no repositorio local para o remoto 
+
+
+
+git log é como se exibisse no proprio terminal um historio sobre os arquivos e seu versionamento
+
+
+tipos de git log
+
+git log --oneline resumi os commits em uma linha para ficar facil a exibição
+
+git --stat exibi quais arquivos foram alterados e quantas linhas foram alteradas
+git log -p exibi todas as alterações feitas em cada commit ou seja em cada atualização(exibi uma lista muito grande)
+
+
+usados agora para fazer pesquisas
+
+git de pesquisas no commit
+git log --author="Texto do qual quer pesquisar"pesquisa pelos commit o nome do author responsavel pelo aquele commit
+
+
+git log --grepe="Pesquisa o texto desjado dentre os commits"
+
+
+
+
+git log --graph="est command bem legal exibi uma ramificaçao dos commits de onde começou por onde passou até o ponto atual" 

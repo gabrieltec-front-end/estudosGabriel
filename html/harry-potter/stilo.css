@@ -1,0 +1,81 @@
+body,html{
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+
+
+.conteudo{
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+.informacao{
+    padding: 50px;
+    text-align: center;
+}
+
+
+#imagem1{
+    background-image: url("grifinoria.webp");
+}
+
+#imagem2{
+    background-image: url("sonserina.webp");
+}
+
+
+
+#imagem3{
+    background-image: url("corvinal.webp");
+}
+
+#imagem4{
+    background-image: url("lunfa-lunfa.webp");
+}
+    
+
+.titulo-imagem{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo{
+    padding: 30px;
+    background-color: #111;
+    color: #fff;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+
+#red{
+    background-color: rgba(194, 3, 3, 0.685);
+
+}
+#verde{
+    background-color: rgba(1, 146, 1, 0.685);
+
+}
+#azul{
+background-color: rgba(2, 2, 134, 0.37);
+}
+#amarelo{
+    background-color: rgb(173, 173, 5);
+}
+
+

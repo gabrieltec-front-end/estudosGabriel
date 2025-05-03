@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="cores.css">
+</head>
+<body >
+    <script>
+        function abrir(){
+            document.getElementById("valor").value
+            if(document.getElementById("valor").value==""){
+                alert("Selecione um nivel para comecar o jogo")
+                return false
+
+            }
+            window.location.href='plataforma.html?'+document.getElementById("valor").value
+    }
+
+    </script>
+
+    <div id="imagem_game">
+        
+        <select id="valor" >
+            <option value="">--Selecione o Nivel--</option>
+            <option value="facil" >Facil</option>
+            <option value="normal">Normal</option>
+            <option value="dificil">Dificil</option>
+        </select>
+        <br>
+       <button onclick="abrir()" >Inciar</button>
+    
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        fieldset{
+            margin-bottom: 8px;
+        }
+        legend{
+            text-transform: uppercase;
+            font-size: 1.1em;
+            
+        }
+        label,input{
+            margin-bottom: 5px;
+        }
+
+       
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"]{
+            
+            display: block;
+            width: 40%;}
+
+            textarea{
+                width: 20%;
+                height: 80px;
+            }
+
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados</legend>
+            <div>
+                <label for="nome">Nome:  </label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="@gmail.com" name="nome" id="email">
+
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div>
+            <legend>Caixa de comentarios</legend>
+            <textarea></textarea>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Me avisar</legend>
+            <div> <label for=""><input type="radio" name="marcar" id="sim">Sim</label></div>
+            <div> <label for=""><input type="radio" name="marcar" id="nao">Não</label></div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

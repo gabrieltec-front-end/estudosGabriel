@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var copo=0
+        cont=0
+        function mudarCopo(){
+            var copo=document.getElementById("copo")
+            if(cont==0){
+                copo.src="copo_cheio.png"
+                cont++
+
+            }
+            else if(cont==1){
+                copo.src="copo_vazio.png"
+                cont--
+            }
+
+        }
+
+    </script>
+    <h2>Primeiro script do dnc</h2>
+    <img id="copo" src="copo_vazio.png" onclick="mudarCopo()">
+    
+</body>
+</html>

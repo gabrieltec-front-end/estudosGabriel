@@ -1,0 +1,59 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: yellow;
+}
+
+
+#container{
+    width: 720px;
+    margin: 0 auto;
+    
+    
+}
+
+#logo{
+    height: 200px;
+    background-color: gray;
+    text-align: center;
+    line-height: 200px;
+
+}
+
+#conteudo{
+    float: right;
+    width: 520px;
+    margin-top: 10px;
+   
+    
+}
+
+
+#navegacao{
+    width: 180px;
+    margin-top: 10px;
+    float: left;
+    background-color: green;
+
+}
+
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    line-height: 2em;
+    background-color: aqua;
+    
+
+}
+
+.paragrafos{
+    background-color: gray;
+    padding: 15px;
+    margin-bottom: 10px;
+}

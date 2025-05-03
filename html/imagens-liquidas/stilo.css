@@ -1,0 +1,71 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white
+}
+
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 500px;
+    
+    
+}
+#conteudo_logo{
+    padding-bottom: 20px;
+}
+
+#logo{
+    width: 100%;
+    background:#225992 url("cabecalho2.jpg") no-repeat center;
+    
+    text-align: center;
+    line-height: 200px;
+
+}
+
+#conteudo{
+    float: right;
+    width: 72%;
+    margin-top: 10px;
+   
+    
+}
+
+
+#navegacao{
+    width: 26%;
+    margin-top: 10px;
+    float: left;
+    background-color: green;
+
+}
+
+ul{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    line-height: 2em;
+    background-color: aqua;
+    
+
+}
+
+.paragrafos{
+    background-color: gray;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+}
+
+img.noticia{
+   width: 100%;
+   
+    border: 1px solid red;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function modificarCor(cor){
+            document.getElementById("texto").style.background=cor
+        }
+
+        function saindoCor(){
+            var caracter= document.getElementById("texto").value
+            var tamanho= caracter.length;
+            if(tamanho=="3"){
+                document.getElementById("texto").style.background="red"
+            }
+            else if(tamanho>3){
+                document.getElementById("texto").style.background="blue"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" id="texto" onfocus="modificarCor('yellow')" onblur="saindoCor()"> 
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       /* var janela
+        function abrirPopUp(){
+            janela=window.open("arrays.html","nova_janela","width=200,height=300")
+        }
+
+        function fecharPopUp(){
+          janela.close()
+        }*/
+        //Tetando outro metodo
+        listar=setTimeout(meuEvento,3000)
+
+        function meuEvento(){
+            document.getElementById("exibir").innerHTML="Você Conseguiu"
+        }
+
+        function pararEvento(){
+            clearTimeout(listar)
+        }
+
+    </script>
+
+
+    <!---<button onclick="abrirPopUp()">Abrir pagina</button>
+    <button onclick="fecharPopUp()">Fechar janela</button>
+     <button onclick="window.print()">Imprimir</button> USANDO AQUI OS METODOS OPEN E CLOSE DO OBJETO WINDOW DO BOM---->
+    <h3 id="exibir"></h3>
+     <button onclick="pararEvento()">Parar evento</button>
+    
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+         var x=Math.random()
+        x=x.toString()
+        y=x.substr(2,2)
+        y=parseInt(y)
+        var cont=0
+
+        while(cont<6){
+
+            var x=Math.random()
+        x=x.toString()
+        y=x.substr(2,2)
+        y=parseInt(y)
+
+        if(y>0 && y<=60){
+            document.write(y)
+            document.write("<hr>")
+        }
+        cont++
+
+        }
+
+    </script>
+    
+</body>
+</html>

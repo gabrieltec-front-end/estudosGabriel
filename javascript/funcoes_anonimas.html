@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Anônimas</title>
+</head>
+<body>
+
+    <script>
+
+
+    var num1=prompt("Digiteo valor do primeiro numero")
+    var num2=prompt("Digite o valor do segundo numero")
+    var calculo=prompt("Digite qual calculo deseja fazer")
+
+    num1=parseFloat(num1)
+    num2=parseFloat(num2)
+
+
+
+        //Utilização da tecnica wapper que consiste em encapsular
+
+        var calculadora=function(num1,num2,calculo){
+            if(calculo=="+"){
+                resultado=num1 + num2
+                return resultado
+            }
+            else if(calculo=="*"){
+                resultado=num1 *num2
+                return resultado
+            }
+
+            else if(calculo=="-"){
+                resultado=num1-num2
+                return resultado
+            }
+            else if(calculo=="/"){
+                resultado=num1/num2
+                return resultado
+            }
+
+        }
+
+        var resultado=calculadora(num1,num2,calculo)
+        document.write("Valor do resultado é: "+ resultado)
+    </script>
+    
+</body>
+</html>

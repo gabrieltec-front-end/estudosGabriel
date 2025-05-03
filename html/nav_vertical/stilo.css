@@ -1,0 +1,43 @@
+
+
+
+/* seta ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{ padding: 10px 20px ;
+    background: url("seta.png") no-repeat left center;
+}***/
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul a{
+    text-decoration: none;
+    background: url("menu.png") no-repeat left;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-indent: 40px;
+    line-height: 40px;
+}
+
+ul a:hover{
+    background: url("menu.png") no-repeat right;
+    color: #fff;
+
+}
+
+#home .index a,
+#home .quem a,
+#home .contato a,
+#home .blog a{
+    background: url("menu.png") no-repeat right;
+    color: #fff;
+}

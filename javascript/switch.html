@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style rel="stylesheet">
+
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+           border-top: 1px solid black ;
+           border-bottom: 1px solid black;
+           padding: 5px;
+           
+        }
+        td{
+            text-align: left;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Opção</th>
+            <th>Menu</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Arroz com batata frita e frango</td>
+            <td>R$17,00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Feijoada</td>
+            <td>R$19,00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Estronoff</td>
+            <td>R$18,00</td>
+        </tr>
+    </table>
+
+    <script>
+        var opcao=prompt("Digite uma opção")
+        opcao=parseInt(opcao)
+
+        switch(opcao){
+            case 1:
+                document.write("Arroz com batata frita")
+                break;
+            case 2: 
+                document.write("Feijoada")
+                break;
+            case 3:
+                document.write("Estrogonoff")
+        }
+    </script>
+</body>
+</html>

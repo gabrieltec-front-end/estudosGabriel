@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções de Data</title>
+</head>
+<body>
+
+    <script>
+        var verdadeiro=true
+        var data= new Date()
+        var mili=0
+        document.write(data.getDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear())
+        document.write("<hr>")
+        cont=0
+
+        while(cont<30){
+           document.write(data.getMilliseconds())
+           document.write("<hr>")
+           cont++
+        }
+
+        document.write(mili)
+    </script>
+    
+</body>
+</html>

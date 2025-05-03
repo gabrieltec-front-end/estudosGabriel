@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="cores.css" rel="stylesheet">
+    
+    
+</head>
+<script src="jogo.js"></script>
+<body onresize="tamanhoJogo()" >
+    <div id="tempo_coluna">
+        <span>Tempo Restante:</span>
+        <span id="tempo">99</span>
+
+    </div>
+    <div id="vidas">
+        <img id="v1" src="coracao_cheio.png">
+        <img id="v2" src="coracao_cheio.png">
+        <img id="v3" src="coracao_cheio.png">
+    </div>
+
+
+
+    <script >
+        var tempoo=setInterval(function(){posicaoRandomica()} , criarMosquitoTempo );
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Usa o metodo random
+        var x=Math.random()
+        x=x.toString()
+        y=x.substr(2,2)
+        y=parseInt(y)
+        var cont=0
+
+        var a=0
+        var b=0
+        var c=0
+       
+        while(cont<99){
+            var x=Math.random()
+        x=x.toString()
+        y=x.substr(2,2)
+        y=parseInt(y)
+        if(y<=10){
+
+            b=y
+      
+        }
+        else if(y>10 && y<20){
+            a=y
+        }
+
+        else if(y>=20 && y<30){
+            c=y
+        }
+        cont++
+        }
+
+        document.write(b)
+        document.write("<hr>")
+        document.write(a)
+        document.write("<hr>")
+        document.write(c)
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,192 @@
+aplicaçãos utlizadas para debug e estudo
+alert()abre uma janela na aplicação web
+console.log()faz uma aplicação de debug na ferramenta do desenvolvedor
+document.write()ele aplica o elemento javascript na sua aplicação web
+
+
+prompt("Inserção de informações na aplicação")
+
+
+
+Uso do Casting<<<>>>>>>>>>>>>>>>>>>>>>
+
+parseInt ou parseFloat ele retorna o valor
+
+.toStrinf faz parte da estrutura da variavel
+
+Ex: variavel=parseInt(variavel)
+    variavel.toString()
+
+
+
+
+operadores Lógicos
+&& da o valor de (E) significa que todas as situações tem quer ser verdadeira
+|| o valor de (OU) significa que pelo menos uma das situações tem que ser verdadeira
+
+! Inverte o valor da condição se for true então o valor passa a ser false
+
+
+<<<<>>>>>>>>>>>>>>>>>>>>.funcções<<>>>>>>>>>>>>>>>>>>>>
+
+ex
+function calcularAreadoTerreno(parametro1,parametro2){
+
+		logica}
+
+
+
+
+
+<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+funções anonimas,tecnnica de wapper
+
+consiste em criar funções sem uma declaração 
+mas essa tecnina de wapper vc pode encapsular a função
+dentro de uma váriavel
+
+<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+funções do objeto Date
+
+são funções que vc pode manipular dados relacionados a tempo
+
+criando a instância do objeto é possivel manipular esses dados
+
+
+
+<<<<<>>>>>>>>>>>>>>.Explorand A API DOM
+
+API DOM nos permite ter acesso e manipular os elementos html da pagina por meio do javascript
+tags também conhcido como nós,todas as tags que possui na pagina são parte da arvore de elementos do DOM
+
+ela possui ferramentas espécificas que o torna capaz de fazer bem mais ações e manipulações dos elementos html
+
+
+
+
+
+<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Estudando os Arrays>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Array são listas ordenadas,ou seja, são variavéis capazes de armazenar um conteudo por meio de indices
+
+declarações de arrays para sua respectiva variavel
+
+
+Duas formas de escrever um array 
+
+declarando 
+var lista =Array("banana")<<---Passsando o indice direto
+
+var lista=["Maca","Laranja"]<-----Abrindo apenas coxetes e fechando pq o interpretador do javascript vai entender que é um Array
+passano os valores direto tambem.
+
+
+<<<<<<<<<<<<<<<<<<<<,ATENÇÃO><><><<<><><<><<<<<><><><><><><
+Cuidado ao usar a proriedade length para saber a quantidade de elementos de um array
+
+
+<<<<<usando uma estrutura de repetição com a função length para percorrer os arrays sequenciais
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Usando o for in estrutura de repetição>>>>>>>>>>>>>>>>>>>
+
+
+for(x in array)=Aqui  vai ocorrer que na vaiavel x elá recebera o conceito do array incorporando o valor do indice mas n do elemento
+Sendo assim por meio da logica da repetição é possivel passar como parametro para recuperar o elemento do valor correspondente ao indice
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Utilizando a função foreach que é passado como metodo
+regras: ela só ler indices numericos diferente do mesmo ela descarta
+
+usando como parametro uma função assim passando as respectivas variaveis na ordem valor,indice,array
+
+Ex lista+pessoas.forEach(function(valor,indice,array){
+
+	Logica da função para manipular os valores contidos no array por neio dos parametros passados
+
+})
+
+
+Usando o parametro variavel arguments é possivel passar inderteminadas variaveis para a função assim sendo armazenado como array,mas
+lmebrando que ele é um objeto de funão e não um array
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+tratamentos de erro,ou eja em operaçoes que podem gerar erro é possivel trata-los e então passar alguma logíca por cima disso
+
+blocoss de codigos para o tratamento de erros
+
+try(passa o codigo de linha que sera tratado)
+
+catch(e)`{onde o erro sera tratado sendo assim passado como parametro sendo que assim vc constroi a logica para o tratamento dele}
+
+finally("É o final do tratamento de erro onde chegara no fim)
+
+
+
+<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOM<<<>>>>>>>>>>>>
+no qual é o brower object model
+seria acessar os recursos do browser por meio do javascript
+
+
+com o DOM nos acessamos os elementos da pagina com o BOM os recursos do browser
+
+
+
+oh metodo window permite por meio dos seus metodos utlizar de elementos e da janela do browser
+
+
+
+
+metodo screen lida com o tamanho da pagina window.screen.hight <<-exemplo
+
+
+O metodo location lida com os links ,então são possiveis manipula-los para passar os codigos por eles
+
+exemplo: window.location.href="link endereço"
+
+
+
+
+
+
+setTimeOut(função,milissegundos para executar)
+	clearTimeOut(para finalizar)<<<---- são dois metodo muito usados para executar funções em tempo determinado
+
+
+
+
+setIntervalfunção,milissegundos da execução) este aplica de maneira continua
+
+
+
+
+
+
+
+elementos chaves que utilizei no app mata_mosca
+
+
+Math.random()
+
+createElement
+
+appendChild
+
+o metodo remove() document e para o this
+
+criação de eventos por meio do javascript
+var.src
+car.onclick
+
+
+window.location.search e o replace
+
+concatenar os valores passado para a pagina com o href passado 
+separar as partes principais em cada pagina html

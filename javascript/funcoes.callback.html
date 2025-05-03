@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+
+    <script>
+
+        var id=prompt("Digite o id")
+        var titulo="Funções de callback Javascript"
+        var descricao="As funções de callback servem para passar funções para outras funções"
+        function exibirArtigo(id,callbackSucesso,callbackErro){
+            if(id=="1"){
+                callbackSucesso(titulo,descricao)
+            }
+            else(callbackErro("Problema na execução"))
+        }
+
+        var callbackSucesso= function(titulo,descricao){
+            document.write("<h1>"+titulo+"</h1>")
+            document.write("<hr>")
+            document.write("<p>"+descricao+"</p>")
+        }
+
+        var callbackErro= function(erro){
+            document.write("<h1>"+erro+"</h1>")
+        }
+
+        exibirArtigo(id,callbackSucesso,callbackErro)
+
+    </script>
+    
+</body>
+</html>

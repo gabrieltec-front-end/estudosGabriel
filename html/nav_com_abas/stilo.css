@@ -1,0 +1,58 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    
+    
+}
+
+ul li{
+    float: left;
+    background:    url("aba-direita.png") no-repeat right top ;
+
+}
+
+ul a{
+    text-decoration: none;
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    color: black;
+   
+    background:    url("aba-esquerda.png") no-repeat left top ;
+    
+}
+
+ul li:hover{
+    background:    url("aba-direita-atual.png") no-repeat right top ;
+    
+}
+
+
+ul a:hover{
+    background:    url("aba-esquerda-atual.png") no-repeat left top ;
+    color: white;
+}
+
+
+ul li.index,
+ul li.quem,
+ul li.contato,
+ul li.blog{
+    background:    url("aba-direita-atual.png") no-repeat right top ;
+}
+
+a.div1,
+a.div2,
+a.div3,
+a.div4{
+    background:    url("aba-esquerda-atual.png") no-repeat left top ;
+    color: white;
+}

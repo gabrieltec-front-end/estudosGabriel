@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function corDeFundo(cores,l,a){
+            document.getElementById("quadrado").style.backgroundColor=cores
+            document.getElementById("quadrado").style.width=l
+            document.getElementById("quadrado").style.height=a
+        }
+    </script>
+</head>
+<body>
+
+    <button type="button" onclick="corDeFundo('red','200px')">Vermelho</button>
+    <button type="button" onclick="corDeFundo('blue','300px','100px')">Azul</button>
+    <button type="button" onclick="corDeFundo('yellow','50px','50px')">Amarelo</button>
+
+    <div id="quadrado" style="width: 100px; height: 100px; background-color: gray;">
+
+    </div>
+    
+</body>
+</html>

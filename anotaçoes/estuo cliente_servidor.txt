@@ -1,0 +1,20 @@
+url endereçameto da aplicação no qual procura
+
+domain um facilitador de pesquisa,ele transforma seu url em un nome
+
+tcp protocolo de comunicação entre as maquinas,usado para transferencia de arquivos,mensagens
+estabelece uma comunicação entre o cliente e o servidor.
+UDP>> tambem é um protocolo de comunição na internet mas só que mais rapido,exemplo: stremaing,video no youtube
+
+ip>> endereçamento da sua maquinha e tambem do servidor
+
+DNS>> é o que transforma seus dados binarios em IP
+
+proxy>> são todos os meios que sua solicitação ira passar
+
+
+request>> solicitação do cliente feito ao servidor 
+
+response>> respossta do servidor ao cliente
+
+status code>> tipo de repostas feito do servido , tipo uma informação ou sucesso ou redirecionamento ou erro do servidor ou erro do cliente

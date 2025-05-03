@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var num1= prompt("Digite o primeiro numero")
+        var operador= prompt("Digite o operador numero")
+        var num2= prompt("Digite o segundo numero")
+
+        num1=parseInt(num1)
+        num2=parseInt(num2)
+
+        var operadores = function(num1,operador,num2){
+            if(operador=="+"){
+                document.write("Valor da operação:"+(num1+num2))
+            }else if(operador=="-"){
+                document.write("Valor da operação: "+num1-num2)
+            }else if(operador=="x"){
+                document.write("Valor da operação: "+num1*num2)
+            }else if(operador=="/"){
+                document.write("Valor da operação: "+num1/num2)
+            }
+        }
+        operadores(num1,operador,num2)
+    </script>
+    
+</body>
+</html>

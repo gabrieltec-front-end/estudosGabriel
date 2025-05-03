@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    
+    <div id="container">
+    <header>
+        <div id="logo">
+            <img src="./imagens/logo.png">
+
+        </div>
+        <div id="conteudo_logo">
+            <div class="conteudo">
+            <img src="./imagens/imagem_texto.png">
+
+            </div>
+            <div class="conteudo">
+                <img src="./imagens/imagem_texto2.png">
+              
+            </div>
+        </div>
+    </header>
+    <div id="conteudo_principal">
+    <article id="exp">
+        <section id="certificado">Certificado de conclusão</section>
+        <section id="relogio">4 Horas de conteudo</section>
+        <section id="camera">Aulas online gravadas</section>
+    </article>
+
+    <article id="video_conteudo">
+        <section id="video"><iframe width="430" height="240" src="https://www.youtube.com/embed/c7XMy7ffx_I?si=7TUkmxX1EZ08Eg9K" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </section>
+             <section><h1>Aprenda com especialistas e comece seu primeiro projeto</h1>
+                <p>Conheça o processo de desenvolvimento e entenda como utilizar os principais métodos e ferramentas da área para resolver problemas complexos. </p>
+                    <p>Conquiste seu certificado e desenvolva um projeto prático para aplicar seus conhecimentos.</p>
+            
+            </section>
+    </article>
+
+    <div id="conteudo_carrossel">
+        <div id="titulo_carrossel">
+            <h1>Mais de 500 alunos já iniciaram seus estudos</h1>
+        </div>
+        <div id="imagens_carrossel">
+            <img id="seta_esquerda" class="seta" onclick="setaEsquerda()" src="./icones/seta_esquerda.svg">
+            <img id="bruna" class="cards" src="./cards/bruna.svg">
+            <img id="leonardo" class="cards" src="./cards/leonardo.svg">
+            <img id="samantha"  class="cards" src="./cards/samantha.svg">
+            <img id="seta_direita" onclick="setaDireita()" class="seta" src="./icones/seta_direita.svg">
+            
+
+        </div>
+
+    </div>
+    <div id="conteudo_formulario">
+        <div id="titulo"><h3>Comece agora mesmo e dê o primeiro passo da sua carreira</h3></div>
+    
+    <div id="formulario">
+        <form action="https://api.sheetmonkey.io/form/hFPUQqfgjE8cpGgACAWe5H" method="post">
+            <input type="nome" name="nome" placeholder="Nome"><br>
+            <input type="email" name="email" placeholder="E-mail"><br>
+            <input type="text" name="phone" placeholder="telefone"><br>
+            <button type="submit">acesse a emenda gratis</button>
+        </form>
+
+    </div>
+    </div>
+
+</div>
+</div>
+
+<script>
+    var leonardo=document.getElementById("leonardo")
+    var bruna=document.getElementById("bruna")
+    var samantha=document.getElementById("samantha")
+    var seta_esquerda=document.getElementById("seta_esquerda")
+    var seta_direita=document.getElementById("seta_direita")
+
+    function setaDireita(){
+        leonardo.style.display="none"
+        seta_direita.style.display="none"
+        seta_esquerda.style.display="flex"
+        
+        samantha.style.display="flex"
+       
+
+       
+    }
+    function setaEsquerda(){
+        samantha.style.display="none"
+        leonardo.style.display="flex"
+        seta_direita.style.display="flex"
+         seta_esquerda.style.display="none"
+    }
+
+    seta_direita.addEventListener("click",function(){
+       samantha.style.transition="opacity 1s"
+       samantha.style.opacity="1"
+    })
+
+    
+</script>
+    
+</body>
+</html>
