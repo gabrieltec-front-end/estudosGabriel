@@ -73,3 +73,57 @@ git log --grepe="Pesquisa o texto desjado dentre os commits"
 
 
 git log --graph="est command bem legal exibi uma ramificaçao dos commits de onde começou por onde passou até o ponto atual" 
+
+
+
+<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+utilizando o git log para navegar sobre os versionamentos para vizualizar em forma de listas
+
+o git checkout é utilizado para navegar pelos commits e também pelos branchs
+
+comando do git checkout == git checkou "nome do commit"
+git checkout "nome da branch para poder abri-la"
+
+
+Usando a extensão git graph para poder fica mais fácil a vizualição dos versionamentos pelo proprio vs code
+
+<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+git revert<<<>>> o git revert é utilizado para retornar um commit as alterações antigas sem apagar a atual
+sem as alterações do commit atualizado
+git revert "versão no qual vc quer que revert " quando salvar irá ter um commit com revert indicando que ouver uma nova versão mas com as alterações antigas 
+mas sem apagar a versão atual que está com as alterações novas
+
+git rezert<<<>>> volta a versão especificada apagando as versões superiores
+git rezet "versão no qual vc quer que volte"
+
+
+:wq para sair da janela que ira abrir quando usar o git revert
+
+utilizar um git push origin main --force para força a subida para o repositorio e manter como o ultimo versioamento inserido  ou no topo do seu git
+
+<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Utilizando das branchs que são as ramificaçoes da branch principal tendo a principal a main e s no qual você pode criar que são as secundárias
+
+Criando uma nova branch>>> comando >>>> git branch nome da branch no qual você quer criar
+pesquisando as branch criadas <<<<>>. comando<<>>> git branch
+
+É normal a criações de branchs secundaárias em uma empresa grande para cada programador fazer uma tarefa e no final elas serem mescladas na branch principal a "main"
+
+se você utilizar o git checkout mais o nome dela você ira abrir a branch no qual vc quer 
+mas se você utilizar o comando git checkout -b mais o nome da branch você ira criar uma e ser direcionado para ela
+
+
+<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Mesclando as gits secundarias a git principal
+
+utilizando o comando git merge na git principal
+sendo o comando git merge nome da branch no qual você quer mesclar
+
+quando tiver conflitos entres os arquivos da branch exemplo com o mesmo nome é possivel vc editar para que as ambas alterações sejam integradas
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Utilizando o git ignore para vc ignorar os arquivos no qual não iram subir para o repositorio
+
+criar um arquivo chamado .gitignore dentro da pasta,arquivo padrão do git ,assim colocando os nomes das pastas e arquivos no qual não iram subir para o repositório
